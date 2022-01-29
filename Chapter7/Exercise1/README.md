@@ -25,7 +25,7 @@ $ltrace -i -C ./date-modified
 [0x402231] nl_langinfo(0x2006c, 0x40c060, 0, 0) = 0x7f489c083965
 ...
 ```
-One of the library functions used is _nl_langinfo_. By looking at the [manual](https://man7.org/linux/man-pages/man3/nl_langinfo.3.html) we can see that this function returns a string according to the first parameter, _item_. Some of _items_ values include the date & time format!
+One of the library functions used is _nl_langinfo_. By looking at the [manual](https://man7.org/linux/man-pages/man3/nl_langinfo.3.html#DESCRIPTION) we can see that this function returns a string according to the first parameter, _item_. Some of _items_ values include the date & time format!
 We can change the _item_ to whatever value in the enum specified in the _langinfo.h_ file.
 In our case, we'll want to change it into T_FMT.
 Now when we run the modified date file, it prints the wanted format:
