@@ -1,6 +1,6 @@
 # Changing the Date Format
 First, lets find the default date format.
-If we run _date_ we can see that the default format is: 
+If we run _date_ we can see that the output for the default format is: 
 Fri 28 Jan 16:59:23 CET 2022.
 Now lets search through the strings of the file:
 
